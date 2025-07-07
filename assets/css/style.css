@@ -1,22 +1,32 @@
 body {
-  font-family: "Times New Roman", Times, serif;
-  background-color: azure;
-  padding: 25px;
+  background-color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Segoe UI", sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #212121;
 }
 
 header {
-  background-color: rgb(18, 140, 188);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 nav {
-  background-color: rgb(26, 101, 192);
+  background-color: #66bb6a;
   padding: 15px;
-  border-radius: 5px;
-  margin-top: 5px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 90%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -25,17 +35,44 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 10px;
 }
 
 nav ul li a {
-  margin: 0 15px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
+  text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
+  color: #004d40;
   text-decoration: underline;
-  color: rgb(0, 0, 0);
+}
+
+section {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #a5d6a7;
+  border-radius: 10px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: hsl(0, 0%, 100%);
+  text-shadow: 1px 1px 4px #333;
+  margin-bottom: 15px;
+}
+
+section p {
+  color: #212121;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .card-container {
@@ -48,49 +85,74 @@ nav ul li a:hover {
 
 .card {
   width: 250px;
-  border: 1px solid #ccc;
+  border: 1px solid #cfd8dc;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
-  background-color: aliceblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY();
+  transform: translateY(-5px);
 }
 
 .card img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .card-content {
-  padding: 15px;
+  padding: 10px;
+  text-align: left;
 }
 
 .card-content h3 {
   margin-top: 0;
-  color: #333;
+  color: #2e7d32;
+  font-size: 18px;
 }
 
 .card-content p {
   font-size: 14px;
-  color: rgb(0, 89, 255);
+  color: #424242;
+  line-height: 1.5;
 }
 
-section {
-  margin: 15px auto;
+input,
+textarea,
+button {
+  font-family: inherit;
   padding: 10px;
-  background-color: rgb(95, 212, 255);
-  border-radius: 10px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
   width: 80%;
-  box-shadow: 0 2px 4px rgba(red, green, blue, alpha);
+  max-width: 400px;
+}
+
+button {
+  background-color: #388e3c;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2e7d32;
+}
+
+#output {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000000;
 }
 
 video {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  margin-top: 20px;
+  border-radius: 5px;
+  width: 500px;
+}
+audio {
+  width: 500px;
 }

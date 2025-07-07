@@ -1,96 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projek UAS PPLM</title>
+    <title>Registrasi Pendakian Gunung</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!--Header Section-->
+    <!-- Header Section -->
     <header>
-      <h1>Manajemen Waktu</h1>
+      <h1>Registrasi Online Pendakian Gunung⛰️</h1>
       <p>
-        Selamat datang di web manajemen waktu. Jadikan kami sahabat untuk
-        manajemen waktu anda dan keluarga.
+        Selamat datang di portal resmi registrasi online pendakian gunung.
+        Website ini dibuat untuk memudahkan para pendaki dalam proses
+        pendaftaran dan mendapatkan informasi penting seputar persiapan
+        pendakian. Mari jelajahi alam dengan aman, terencana, dan bertanggung
+        jawab! 🌄
       </p>
     </header>
-    <!--Navigasi Menu-->
+    <!-- Navigasi Menu -->
     <nav>
       <ul>
-        <li>
-          <a href="#gambar">Gambar</a>
-          <a href="#audio">Audio</a>
-          <a href="#video">Video</a>
-          <a href="#form">Form</a>
-        </li>
+        <li><a href="#informasi">Informasi</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#form">Form</a></li>
       </ul>
     </nav>
 
-    <!--Konten Gambar-->
-    <section id="gambar">
-      <h2>Gambar contoh produk</h2>
-      <p>Gambar ini merupakan contoh dari web ini</p>
-
-      <div class="card-container">
-        <!--Card Gambar-->
-        <div class="card">
-          <img src="assets/images/gambar.jpg" alt="Contoh Gambar" />
-
-          <div class="card-content">
-            <h3>Contoh gambar</h3>
-            <p>Gambar ini merupakan contoh dari web ini</p>
-          </div>
-        </div>
-        <!--Card Gambar-->
-        <div class="card">
-          <img src="assets/images/gambar.jpg" alt="Contoh Gambar" />
-
-          <div class="card-content">
-            <h3>Contoh gambar</h3>
-            <p>Gambar ini merupakan contoh dari web ini</p>
-          </div>
-        </div>
-        <!--Card Gambar-->
-        <div class="card">
-          <img src="assets/images/gambar.jpg" alt="Contoh Gambar" />
-
-          <div class="card-content">
-            <h3>Contoh gambar</h3>
-            <p>Gambar ini merupakan contoh dari web ini</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="audio">
-      <h2>Audio Contoh Produk Web</h2>
-      <audio src="assets/audio/audio1.mp3" controls type="audio/mp3">
-        Browser tidak mendukung audio
-      </audio>
-    </section>
-
-    <section id="video">
-      <h2>Video Contoh Produk Web</h2>
-      <video src="assets/video/video1.mp4" controls type="video/mp4">
-        Browser tidak mendukung video
-      </video>
-    </section>
-    <!--Konten Form-->
+    <!-- Form Registrasi -->
     <section id="form">
-      <h2>Formulir Pendaftaran</h2>
+      <h2>Formulir Pendaftaran Pendakian</h2>
       <form onsubmit="return showMessage();">
         <input
           type="text"
           name="name"
           id="name"
-          placeholder="Masukan Nama Anda"
+          placeholder="Nama Lengkap"
           required
-        />
-        <button type="submit">Kirim</button>
+        /><br /><br />
+
+        <input
+          type="text"
+          name="tujuan"
+          id="tujuan"
+          placeholder="Tujuan Gunung (misal: Gunung Rinjani)"
+          required
+        /><br /><br />
+
+        <input type="date" name="tanggal" id="tanggal" required /><br /><br />
+
+        <textarea
+          name="info"
+          id="info"
+          placeholder="Nomor Telepon / Kontak Darurat"
+          rows="4"
+          cols="30"
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">Kirim Pendaftaran</button>
         <p id="output"></p>
       </form>
     </section>
+
+    <!-- Informasi Penting -->
+    <section id="informasi">
+      <h2>Informasi Penting Sebelum Mendaki</h2>
+      <p>
+        Pendakian bukan sekadar kegiatan fisik, tetapi juga bentuk penghormatan
+        terhadap alam. Demi keselamatan dan kenyamanan semua pihak, harap
+        perhatikan informasi berikut sebelum memulai pendakian:
+      </p>
+
+      <div class="card-container">
+        <div class="card">
+          <img src="assets/images/fotolgl.jpg" alt="Persiapan Logistik" />
+          <div class="card-content">
+            <h3>Persiapan Logistik</h3>
+            <p>
+              Periksa kembali barang bawaan seperti makanan instan, air minum,
+              peralatan masak, serta perlengkapan tidur dan shelter. Rencanakan
+              dengan matang sesuai durasi pendakian agar tidak kekurangan
+              logistik.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/fotop3k.jpg" alt="P3K" />
+          <div class="card-content">
+            <h3>Perlengkapan P3K</h3>
+            <p>
+              Selalu bawa kotak P3K berisi antiseptik, plester, perban, dan
+              obat-obatan pribadi. Pengetahuan dasar pertolongan pertama sangat
+              membantu jika terjadi kondisi darurat di jalur pendakian.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/fotoalt.jpg" alt="Alat Pendakian" />
+          <div class="card-content">
+            <h3>Peralatan Pendakian</h3>
+            <p>
+              Gunakan sepatu khusus pendakian, carrier ergonomis, senter, jas
+              hujan, sleeping bag, dan tenda. Pastikan semua alat sudah
+              diperiksa dan dalam kondisi baik sebelum keberangkatan.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/fotoks.jpg" alt="Cek Kesehatan" />
+          <div class="card-content">
+            <h3>Pemeriksaan Kesehatan</h3>
+            <p>
+              Periksa kesehatan Anda di puskesmas atau dokter sebelum naik
+              gunung, khususnya jika memiliki riwayat asma, jantung, atau
+              tekanan darah. Kondisi fisik prima akan meminimalisir risiko
+              selama perjalanan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio Instruksi -->
+    <section id="audio">
+      <h2>Dengarkan Arahan Sebelum Memulai Pendakian</h2>
+      <audio src="assets/audio/arahan.mp3" controls type="audio/mp3">
+        Browser Anda tidak mendukung pemutaran audio.
+      </audio>
+    </section>
+
+    <!-- Video Persiapan -->
+    <section id="video">
+      <h2>Apa Saja Yang Perlu Persiapan Pendakian</h2>
+      <video src="assets/video/video2.mp4" controls type="video/mp4">
+        Browser Anda tidak mendukung pemutaran video.
+      </video>
+    </section>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>
